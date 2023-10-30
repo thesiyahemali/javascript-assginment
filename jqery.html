@@ -46,3 +46,35 @@ ANS:
                 </script> 
                 </body> 
           </html>  -->
+
+4.Event bubbling tickling example 
+ANS:
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling Example</title>
+</head>
+<body>
+    <div id="outer" style="padding: 20px; border: 1px solid #ccc;">
+        <div id="middle" style="padding: 20px; border: 1px solid #00f;">
+            <div id="inner" style="padding: 20px; border: 1px solid #f00;">
+                <button id="button">Click Me</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Event handler function
+        function handleEvent(event) {
+            console.log(`Event handled by ${event.currentTarget.id}`);
+        }
+
+        // Attach event listeners to each element
+        document.getElementById('inner').addEventListener('click', handleEvent);
+        document.getElementById('middle').addEventListener('click', handleEvent);
+        document.getElementById('outer').addEventListener('click', handleEvent);
+    </script>
+</body>
+</html> -->
